@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: myweb-deploy
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: web
@@ -17,3 +17,8 @@ spec:
           image: na3150/mini4-introduction:26
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: 200m
+            limits:
+              cpu: 200m
