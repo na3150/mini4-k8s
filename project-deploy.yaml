@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myweb
-          image: na3150/mini4-introduction:31
+          image: na3150/mini4-introduction:32
           ports:
             - containerPort: 8080
           resources:
